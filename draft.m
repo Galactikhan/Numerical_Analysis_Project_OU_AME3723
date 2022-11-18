@@ -5,6 +5,10 @@ imax=20;
 tol=0.0001;
 
 Fa=F(a);Fb=F(b);
+
+h = (b-a)/10
+
+
 if Fa*Fb >0
      disp('Error')
 else
