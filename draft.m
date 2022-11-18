@@ -1,6 +1,15 @@
+%%%%%%%%%%%%%%%%%
+% Def. Function %
+%%%%%%%%%%%%%%%%%
+%
 F=@(x) x^4-5.5x^3-7.2x^2+43x+36;
+%
+%
+% Interval
 a=-3;b=6;
-
+%
+%
+% Iterations 
 imax=20;
 tol=0.0001;
 
@@ -24,6 +33,8 @@ else
         fprintf('%5i %11.6f %11.6f %11.6f %11.6f %11.6f\n',i,a,b,xNS,FxNS,toli);
         if toli<tol
             break
+         %%% Sign check %%%
+         
         end
         if F(a)*FxNS<0
               b=xNS;
