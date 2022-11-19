@@ -1,22 +1,27 @@
-%%%%%%%%%%%%%%%%%
-% Def. Function %
-%%%%%%%%%%%%%%%%%
-%
-F=@(x) x^4-5.5x^3-7.2x^2+43x+36;
-%
-%
-% Interval
-a=-3;b=6;
+%%%%%%%%%%%%%%%%%%%%%%%
+% Set output Vector R %
+%%%%%%%%%%%%%%%%%%%%%%%
+% This sets R, as a vector containing the desired 
+% roots of the given: function, points a & b, and 
+% the Maximum Tolerance.
+R=BisecAllRoots(fun,a,b,TolMax)
 %
 %
-% Iterations 
+Fa=F(a);Fb=F(b);
+%
+%
+% Iterations
 imax=20;
 tol=0.0001;
 
-Fa=F(a);Fb=F(b);
-
-h = (b-a)/10
-
+%%%%%%%%%%%%%%%%%%%%%
+% Main Calculations %
+%%%%%%%%%%%%%%%%%%%%%
+%
+% h1 is the first sub interval
+h1 = abs((b-a)/10);
+#
+#
 
 if Fa*Fb >0
      disp('Error')
