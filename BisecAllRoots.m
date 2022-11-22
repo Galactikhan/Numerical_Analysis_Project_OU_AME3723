@@ -12,10 +12,10 @@ h1 = abs((b-a)/SubI1);
 %
 RSub1 = zeros(1;SubI1)
 %
-for i = 1:(SubI1/2);
-    RSub1(i) = a + h;
+for i = 0:(SubI1/2);
+    RSub1(i) = a + sum(h(i));
    for i = (SubI1/2):SubI1;
-       RSub1(i) = b - h;       
+       RSub1(i) = b - sum(h(i));       
    end
 end
 for j = 1:SubI1-1;
