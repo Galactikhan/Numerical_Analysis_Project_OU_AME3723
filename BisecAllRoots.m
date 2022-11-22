@@ -26,10 +26,10 @@ RSub1 = zeros(1;SubI1)
 % This fills the Sub-Interval Matrix with 
 % integers from point a to point b using 
 % h as length.
-for i = 0:(SubI1/2);
-    RSub1(i) = a + sum(h(i));
+for i = 1:(SubI1/2);
+    RSub1(i) = a + sum(h(i-1));
    for i = (SubI1/2):SubI1;
-       RSub1(i) = b - sum(h(i));       
+       RSub1(i) = b - sum(h(i-1));       
    end
 end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
