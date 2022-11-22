@@ -36,7 +36,8 @@ end
 % Sign Check in Sub-Interval %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This multiplies each point within
-% the Sub-Interval.
+% the Sub-Interval and checks for a 
+% negative sign.
 for j = 1:SubI1-1;   
 if F(RSub1(j))*F(j+1) < 0 
     disp(' Sign change detected in Sub-Interval ');
