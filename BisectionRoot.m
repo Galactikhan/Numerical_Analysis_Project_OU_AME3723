@@ -15,7 +15,7 @@
 %%%%%%%%%%%%%%%%%%%
 % This defines a final solution/root
 % of the function Xs, with respect to:
-% the unction (fun), points a & b, and 
+% the function (fun), points a & b, and 
 % the Maximum tolerance desired.
 function Xs= BisectionRoot(Fun,a,b,TolMax)
 %%%%%%%%%%%%%%%%%%%%%%%
