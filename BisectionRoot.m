@@ -22,7 +22,7 @@ function Xs= BisectionRoot(Fun,a,b,TolMax)
 % Set Iteration limit %
 %%%%%%%%%%%%%%%%%%%%%%%
 % 20 seems about right, but can be
-% increased for moer difficult equations.
+% increased for more difficult equations.
 imax=20;
 %%%%%%%%%%%%%%%%%%%%%%
 % Define a Subscript %
